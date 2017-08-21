@@ -159,7 +159,13 @@ For researchers who have already been programming and seek to expand their capab
 <p><a href='{{ site.dc_pre_assessment }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.dc_post_assessment }}'>Post-workshop Survey</a></p>
 
-
+{% if page.etherpad %}
+<p>
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <br/>
+  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
 
 <div class="row">
   <div class="col-md-6">
@@ -212,13 +218,6 @@ For researchers who have already been programming and seek to expand their capab
   where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
   '2015-06-10-esu'.
 -->
-{% if page.etherpad %}
-<p>
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
 
 <hr/>
 
